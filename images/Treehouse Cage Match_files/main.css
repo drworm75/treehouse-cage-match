@@ -1,0 +1,94 @@
+body {
+	/*height: 100%;*/
+	background: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.7) 100%),url(/images/pg02bg.png) no-repeat center center;
+	background-size: 90%
+}
+
+ .table > tbody > tr > th, .table > tbody > tr > td {
+ 	border: none;
+ }
+
+.fight {
+	margin-top:    360px;
+	background:    #00ff00;
+	background:    -webkit-linear-gradient(#00ff00, #41b01b);
+	background:    linear-gradient(#00ff00, #41b01b);
+	border:        2px solid #274e13;
+	border-radius: 15px;
+	padding:       8px 20px;
+	color:         #ffffff;
+	display:       inline-block;
+	font:          normal 700 24px/1 "Playfair Display", serif;
+	text-align:    center;
+	text-shadow:   1px 1px #000000;
+}
+
+.winner {
+	background:    #ff0000;
+	background:    -webkit-linear-gradient(#ff0000, #b01b1b);
+	background:    linear-gradient(#ff0000, #b01b1b);
+	border:        2px solid #660000;
+	border-radius: 15px;
+	padding:       8px 20px;
+	color:         #ffffff;
+	display:       inline-block;
+	font:          normal 700 24px/1 "Playfair Display", serif;
+	text-align:    center;
+	text-shadow:   1px 1px #000000;
+}
+
+.winner > span {
+	font-size: 11px;
+}
+
+.col-lg-4 {
+  width: 100%;
+}
+.input-group {
+	width: 200px; // for exemple
+	position: relative;
+	left: 130px;
+	display: table;
+	border-collapse: separate;
+}
+
+
+
+.player-card {
+	text-align: center;
+}
+
+.player-card th{
+	text-align: center;
+}
+
+.row {
+	background-color: inherit;
+
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  /*position: absolute;*/
+  top: 8px;
+  left: 130px;
+}
+
+.winner-td {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.hidden {
+	display: none;
+}
