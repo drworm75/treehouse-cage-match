@@ -6,7 +6,6 @@ $(document).ready(function() {
 	let winnerBadges = [];
 
 
-		let x = 0;
 
 
 		// const animation = (winningPlayer) => {
@@ -18,11 +17,12 @@ $(document).ready(function() {
 		// 	    $('.image1').animate({left: "+=300px"}, 1000);
 		// 	}
 		
+	let x = 0;
 
 	const animation = () => {
 		const go = () => {
 			console.log("go", x)
-			$('.winner-td').html('<img src="' + winnerBadges[x] + '" class="image1" width="25" height="25">')
+			$('.winner-td').html('<img src="' + winnerBadges[x] + '" class="image1" width="50" height="50">')
 			var r = Math.floor((Math.random() * 8) + 1);
 			console.log(r);
 		    if (r === 1) {
@@ -54,7 +54,7 @@ $(document).ready(function() {
 		    	setTimeout(animation, 300);
 		    }
 	    }
-		go(winningPlayer);
+		go();
 		return false
 	};
 
@@ -105,10 +105,12 @@ $(document).ready(function() {
 			}
 				if (player1[0].points.total > player1[1].points.total) {
 					$('#player1-img-div').addClass('winner-td');
+					x = 0
 					animation();
 				} else {
 					$('#player2-img-div').addClass('winner-td');
 					let winningPlayer = 1
+					x = 0
 					animation();
 				}
 				$('.fight').addClass('winner').html(winner + " wins!<br><span>Enter two more contestants to fight again!</span>");
